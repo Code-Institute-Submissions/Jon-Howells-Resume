@@ -6,41 +6,52 @@
     background-color: #262626;
 }
 
-/* .nav-page-color {
-    color: #fff;
-} */
-
-
 /* ---------------------------------------------------------- Start Page */
 
-/* #bg-image {
-    clear: both;
-    background-image: url(../images/background-artwork.png);
-    background-size: cover;
-    background-position: center;
-    height: 1000px;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    border: 0;
-} */
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 .home-container {
-    clear: both;
+    position: absolute;
+    left: 0;
+    top: 0;
     background-image: url(../images/background-artwork.png);
     background-size: cover;
     background-position: center;
-    height: 1000px;
+    height: 100%;
     width: 100%;
 }
 
 .home-text {
+    font-size: 22px;
+    line-height: 24px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
     color: #fff;
-    background-color: #111111;
     position: absolute;
-    top: 0;
-    left: 0;
-    margin: auto;
+    top: 8%;
+}
+
+.home-button {
+    position: absolute;
+    bottom: 8%;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+}
+
+.home-button-adjust {
+    text-decoration: none;
 }
 
 /* ---------------------------------------------------------- Heading */
@@ -70,6 +81,14 @@ li a:hover, i:hover {
     transition: .3s;
 }
 
+/* ---------------------------------------------------------- Media Queries */
+
+@media only screen and (min-width: 700px){
+    .home-text {
+        font-size: 44px;
+        line-height: 48px;
+    }
+}
 
 
 
