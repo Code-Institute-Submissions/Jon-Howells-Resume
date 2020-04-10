@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
 
 /* ---------------------------------------------------------- colors */
 
@@ -10,18 +10,55 @@
     color: #fff;
 } */
 
+
+/* ---------------------------------------------------------- Start Page */
+
+/* #bg-image {
+    clear: both;
+    background-image: url(../images/background-artwork.png);
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+} */
+
+.home-container {
+    clear: both;
+    background-image: url(../images/background-artwork.png);
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    width: 100%;
+}
+
+.home-text {
+    color: #fff;
+    background-color: #111111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+
 /* ---------------------------------------------------------- Heading */
 
-.navbar-brand{
+nav {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
     color: #fff;
     font-size: 25px;
+}
+.navbar-brand{
+    font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 .nav-link, i {
     color: #fff;
-    font-size: 25px;
 }
 
 nav a:hover {
