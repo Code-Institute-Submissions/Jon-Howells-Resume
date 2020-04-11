@@ -54,6 +54,7 @@
     text-decoration: none;
 }
 
+
 /* ---------------------------------------------------------- Heading */
 
 nav {
@@ -63,7 +64,7 @@ nav {
     font-size: 25px;
 }
 .navbar-brand{
-    font-size: 30px;
+    font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -90,6 +91,11 @@ li a:hover, i:hover {
     }
 }
 
+@media only screen and (min-width: 815px) {
+    .navbar-brand {
+        font-size: 30px;
+    }
+}
 
 
 
