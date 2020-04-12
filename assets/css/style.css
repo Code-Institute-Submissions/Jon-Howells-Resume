@@ -13,12 +13,14 @@
     text-transform: uppercase;
 }
 
+.text-center {
+    text-align: center;
+}
+
 /* ---------------------------------------------------------- Start Page */
 
 
-.flex-container {
-    display: flex;
-    justify-content: center;
+.d-flex {
     align-items: center;
     text-align: center;
 }
@@ -92,6 +94,15 @@
     color: #b30086;
 }
 
+.hvr-sweep-to-right:before {
+    background: #b30086;
+}
+
+.home-button i {
+    color: #fff;
+    font-size: 17px;
+}
+
 
 /* ---------------------------------------------------------- NavBar */
 
@@ -100,13 +111,15 @@ nav {
     font-weight: 700;
     color: #fff;
     font-size: 20px;
+    position: fixed;
+    border-bottom: 3px solid #b30086;
 }
 .navbar-brand{
     font-size: 20px;
     letter-spacing: 2px;
 }
 
-.nav-link, i {
+.nav-link i {
     color: #fff;
 }
 
@@ -128,7 +141,7 @@ nav {
 
 /* ---------------------------------------------------------- Hover */
 
-li a:hover, i:hover, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-brand:hover {
+li a:hover, li i:hover, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-brand:hover {
     color: #b30086;
     transition: .5s;
 }
@@ -155,17 +168,56 @@ button a:hover {
 
 /* ---------------------------------------------------------- About Page */
 
-.container-page-heading {
-
-}
-
 .page-header {
     color: #262626;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 40px;
     letter-spacing: 2px;
+    margin: 20px 0 0 0;
+    text-align: center;
 }
+
+.page-header-line {
+    background: #262626;
+    height: 5px;
+    width: 60px;
+    align-items: center;
+    margin: 10px 0 30px 0;
+}
+
+.section-heading {
+    color: #262626;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin: 0 0 30px 0;
+}
+
+.personal-image {
+    background: url(../images/jon-howells.JPG) no-repeat center;
+    min-height: 250px;
+    min-width: 250px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.about-me-heading {
+    color: #262626;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    margin: 30px 0;
+}
+
+.about-me-text {
+    color: #262626;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
 /* ---------------------------------------------------------- Media Queries */
 
 @media only screen and (min-width: 700px){
