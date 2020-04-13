@@ -6,7 +6,13 @@
     background-color: #262626;
 }
 
+.bg-skill {
+    background-color: #ff4dd2;
+}
 
+.bg-my-skills {
+    background: #f2f2f2;
+}
 /* ---------------------------------------------------------- Site Wide CSS */
 
 .uppercase {
@@ -15,6 +21,12 @@
 
 .text-center {
     text-align: center;
+}
+
+.section-column {
+    display: table-cell;
+    float: none;
+    margin: 
 }
 
 /* ---------------------------------------------------------- Start Page */
@@ -47,20 +59,6 @@
     top: 8%;
 }
 
-/* .home-button {
-    position: absolute;
-    bottom: 8%;
-    padding: 10px 20px;
-    font-size: 20px;
-    font-weight: 500;
-    background-color: transparent;
-    color: #fff;
-    border: 2px solid #fff;
-    cursor: pointer;
-    font-family: "Raleway", sans-serif;
-    text-decoration: none;
-} */
-
 .btn-dark {
     background-color: transparent;
     border: 2px solid #fff;
@@ -76,19 +74,6 @@
     transform: translateX(-50%);
     border-radius: 0;
 }
-
-/* .btn-dark {
-    position: absolute;
-    left: 45%;
-    bottom: 8%;
-    padding: 1em 2em;
-    font-size: 20px;
-    font-weight: 500;
-    background-color: transparent;
-    color: #fff;
-    border: 2px solid #fff;
-    font-family: "Raleway", sans-serif;
-} */
 
 .highlight-text {
     color: #b30086;
@@ -135,72 +120,55 @@ nav {
     color: #b30086;
 }
 
-/* .navbar-toggler-icon {
-    color: #fff;
-} */
-
 /* ---------------------------------------------------------- Hover */
 
 li a:hover, li i:hover, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-brand:hover {
     color: #b30086;
-    transition: .5s;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
 
 button a:hover {
     text-decoration: none;
     color: #b30086;
-    transition: .5s;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
 
 .home-button:hover {
     border-color: #b30086;
     background-color: #b30086;
-    transition: .5s; 
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out; 
 }
 
-/* .navbar-dark .navbar-nav .nav-link:hover {
-    color: #b30086;
-}
+/* ---------------------------------------------------------- About Me */
 
-.navbar-dark .navbar-brand:hover {
-    color: #b30086;
-} */
-
-/* ---------------------------------------------------------- About Page */
-
-.page-header {
+.section-heading {
     color: #262626;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 40px;
     letter-spacing: 2px;
-    margin: 20px 0 0 0;
-    text-align: center;
-}
-
-.page-header-line {
-    background: #262626;
-    height: 5px;
-    width: 60px;
-    align-items: center;
-    margin: 10px 0 30px 0;
-}
-
-.section-heading {
-    color: #262626;
-    font-family: "Raleway", sans-serif;
-    font-weight: 600;
-    font-size: 30px;
-    letter-spacing: 1px;
-    margin: 0 0 30px 0;
+    margin: 0 0 60px 0;
 }
 
 .personal-image {
     background: url(../images/jon-howells.JPG) no-repeat center;
     min-height: 250px;
-    min-width: 250px;
+    max-width: 250px;
     border: 1px solid #fff;
     border-radius: 50%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .about-me-heading {
@@ -218,12 +186,182 @@ button a:hover {
     font-size: 18px;
 }
 
+/* ---------------------------------------------------------- My Skills */
+
+.progress {
+    position: relative;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.progress-type, .progress-percentage {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-type {
+    display: flex;
+    left: 0;
+    font-size: 11px;
+    width: 70px;
+    color: #fff;
+    background-color: #b30086;
+}
+
+.progress-percentage {
+    right: 0;
+    font-size: 14px;
+    color: #262626;
+    padding: 0 15px 0 0;
+    display: none;
+}
+
+/* .skill-box-container {
+    display: inline-block;
+    position: relative;
+    margin: 60px;
+}
+
+.skill-box {
+    height: 80px;
+    width: 80px;
+    background-color: #b30086;
+    margin: 0;
+    border: 1px transparent;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+}
+
+.skill-box i {
+    font-size: 35px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.skill-box-text {
+
+} */
+
+/* ---------------------------------------------------------- My Work History */
+
+.timeline-content {
+    max-width: 500px;
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #262626;
+    border-left: 1px solid;
+    left: 35%;
+}
+
+.timeline-content p {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+.timeline-content:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-content:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #b30086;
+}
+
+.timeline {
+    margin-bottom: 30px;
+}
+
+.timeline-content h4 {
+    font-family: "Railway", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* ---------------------------------------------------------- Footer */
+
+footer {
+    background-color: #262626;
+    color: #fff;
+    min-height: 60px;
+}
+
+#footer-details {
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+h6 {
+    margin: 0;
+}
+
+.cv-download i {
+    color: #fff;
+    padding-left: 4px;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.cv-download i:hover{
+    color: #b30086;
+}
 /* ---------------------------------------------------------- Media Queries */
 
 @media only screen and (min-width: 700px){
     .home-text {
         font-size: 44px;
         line-height: 48px;
+    }
+    .section-column {
+        padding: 100px;
+    }
+    .progress-type {
+        width: 110px;
+        font-size: 14px;
+    }
+    .progress-percentage {
+        display: flex;
+    }
+    .skill-box {
+        width: 110px;
+        height: 110px;
+    }
+    .skill-box i {
+        font-size: 45px;
     }
 }
 
@@ -240,6 +378,12 @@ button a:hover {
     .navbar-toggler-icon {
         width: 1.25em;
         height: 1.25em;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .section-column {
+        padding: 100px 200px;
     }
 }
 
