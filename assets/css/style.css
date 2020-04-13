@@ -273,6 +273,19 @@ button a:hover {
     letter-spacing: 1px;
 }
 
+/* ---------------------------------------------------------- Portfolio */
+
+#projects {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.project-container {
+    display: inline-block;
+    position: relative;
+    background-color: #262626;
+}
+
 /* ---------------------------------------------------------- Footer */
 
 footer {
@@ -329,6 +342,10 @@ h6 {
     .skill-box i {
         font-size: 45px;
     }
+    .project-container {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 @media only screen and (min-width: 815px) {
@@ -353,6 +370,10 @@ h6 {
 @media only screen and (min-width: 1000px){
     .section-column {
         padding: 100px 200px;
+    }
+    .project-container {
+        width: 340px;
+        height: 340px;
     }
 }
 
