@@ -13,4 +13,9 @@ During the coding process I used a mixture of bootstraps content with a lot of m
 
 My UX design choices were heavily centered around creating content that makes you explore, 
 
+### Portfolio Page
 
+Reference: All the images are taken from a website called BlueSnap, from this article: https://home.bluesnap.com/snap-center/blog/ecommerce-website-examples/
+I wanted to find some smaller sized images of websites I could use as placeholders as I don't have any real websites I've worked on. While searching
+I realised I didn't need smaller images, just .png's as they are resizable. I stumbled upon this website which was perfect, had loads of good .png 
+images and all real websites. No more thought than that. But they were a godsend.

@@ -13,6 +13,11 @@
 .bg-my-skills {
     background: #f2f2f2;
 }
+
+.bg-my-work {
+    background: #f2f2f2;
+}
+
 /* ---------------------------------------------------------- Site Wide CSS */
 
 .uppercase {
@@ -148,6 +153,16 @@ button a:hover {
     -o-transition: all 0.5s ease-in-out; 
 }
 
+.btn-card:hover {
+    background-color: #b30086;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
 /* ---------------------------------------------------------- About Me */
 
 .section-heading {
@@ -275,15 +290,61 @@ button a:hover {
 
 /* ---------------------------------------------------------- Portfolio */
 
-#projects {
-    margin: 20px 0;
-    text-align: center;
+.my-work {
+    padding: 100px 0;
 }
 
-.project-container {
-    display: inline-block;
-    position: relative;
+.carousel-caption {
+    color: #000;
+}
+
+.carousel-caption h5 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.carousel-caption p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    color: #000;
+    font-size: 30px;
+    background: none;
+}
+
+.carousel-indicators li {
+    background-color: #000;
+}
+
+.portfolio-heading {
+    color: #262626;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin: 60px 0;
+}
+
+.my-work .col-12, .col-md-6, .col-lg-4 {
+    padding: 15px;
+}
+
+.card-img-top {
+    height: 250px;
+}
+
+.mx-auto {
+    max-width: 1200px;
+}
+
+.btn-card {
+    color: #fff;
     background-color: #262626;
+    border: none;
 }
 
 /* ---------------------------------------------------------- Footer */
@@ -320,6 +381,16 @@ h6 {
 }
 /* ---------------------------------------------------------- Media Queries */
 
+@media only screen and (max-width: 400px) {
+    .navbar-toggler-icon {
+        width: 1.25em;
+        height: 1.25em;
+    }
+    .project-container {
+        width: 100%;
+    }
+}
+
 @media only screen and (min-width: 700px){
     .home-text {
         font-size: 44px;
@@ -343,8 +414,7 @@ h6 {
         font-size: 45px;
     }
     .project-container {
-        width: 200px;
-        height: 200px;
+        height: 300px;
     }
 }
 
@@ -360,20 +430,15 @@ h6 {
     }
 }
 
-@media only screen and (max-width: 350px) {
-    .navbar-toggler-icon {
-        width: 1.25em;
-        height: 1.25em;
-    }
-}
-
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1200px){
     .section-column {
         padding: 100px 200px;
     }
-    .project-container {
-        width: 340px;
-        height: 340px;
+    .carousel-caption h5 {
+    font-size: 50px;
     }
+    .carousel-caption p {
+    font-size: 30px;
+}
 }
 
