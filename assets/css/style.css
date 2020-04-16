@@ -28,10 +28,40 @@
     text-align: center;
 }
 
-.section-column {
-    display: table-cell;
-    float: none;
-    padding: 0 auto; 
+.mx-auto {
+    max-width: 1200px;
+}
+
+.header-line {
+    background: #262626;
+    height: 4px;
+    width: 80px;
+    margin: 0 0 50px 0;
+}
+
+.section-heading {
+    color: #262626;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 0 0 20px 0;
+}
+
+.top-section-heading {
+    color: #262626;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 0 0 20px 0;
+}
+
+.flex {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* ---------------------------------------------------------- Start Page */
@@ -101,8 +131,8 @@ nav {
     font-weight: 700;
     color: #fff;
     font-size: 20px;
-    position: fixed;
     border-bottom: 3px solid #b30086;
+    width: 100%;
 }
 .navbar-brand{
     font-size: 20px;
@@ -165,15 +195,6 @@ button a:hover {
 
 /* ---------------------------------------------------------- About Me */
 
-.section-heading {
-    color: #262626;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    letter-spacing: 2px;
-    margin: 0 0 60px 0;
-}
-
 .personal-image {
     background: url(../images/jon-howells.JPG) no-repeat center;
     min-height: 250px;
@@ -199,6 +220,10 @@ button a:hover {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 18px;
+}
+
+.about-me {
+    padding: 100px 0;
 }
 
 /* ---------------------------------------------------------- My Skills */
@@ -291,7 +316,7 @@ button a:hover {
 /* ---------------------------------------------------------- Portfolio */
 
 .my-work {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .carousel-caption {
@@ -337,10 +362,6 @@ button a:hover {
     height: 200px;
 }
 
-.mx-auto {
-    max-width: 1200px;
-}
-
 .btn-card {
     color: #fff;
     background-color: #262626;
@@ -366,7 +387,7 @@ button a:hover {
 /* ---------------------------------------------------------- Contact */
 
 .my-contact {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .my-contact .mx-auto {
@@ -443,9 +464,6 @@ h6 {
         font-size: 44px;
         line-height: 48px;
     }
-    .section-column {
-        padding: 100px;
-    }
     .progress-type {
         width: 110px;
         font-size: 14px;
@@ -460,14 +478,24 @@ h6 {
     .skill-box i {
         font-size: 45px;
     }
-    .project-container {
-        height: 300px;
-    }
-    .section-heading {
+    .section-heading, .top-section-heading {
         font-size: 40px;
+    }
+    .top-section-heading {
+        margin: 60px 0 20px 0;
     }
     .card-img-top {
         height: 250px;
+    }
+}
+
+@media only screen and (min-height: 700px) {
+    #contact-footer {
+        position: fixed;
+        bottom: 0;
+    }
+    .my-contact h4 {
+        margin-top: 50px;
     }
 }
 
@@ -487,14 +515,11 @@ h6 {
 }
 
 @media only screen and (min-width: 1200px){
-    .section-column {
-        padding: 100px 200px;
-    }
     .carousel-caption h5 {
     font-size: 50px;
     }
     .carousel-caption p {
     font-size: 30px;
-}
+    }
 }
 

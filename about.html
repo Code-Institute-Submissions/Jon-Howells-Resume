@@ -23,14 +23,14 @@
 	<title>Website Portfolio</title>
 </head>
 
-<body>
+<body class="w-100">
 
 	<!-- Navbar -->
-	<nav class="navbar navbar-dark navbar-expand-sm bg-header-dark justify-content-center">
+	<nav class="navbar fixed-top navbar-dark navbar-expand-sm bg-header-dark justify-content-center">
 		<a href="index.html" class="navbar-brand w-50 mr-auto uppercase">Jonathan Howells</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headercollapse">
         <span class="navbar-toggler-icon"></span>
-    </button>
+        </button>
 		<div class="navbar-collapse collapse w-100" id="headercollapse">
 			<ul class="navbar-nav w-100 justify-content-center nav-page-color">
 				<li class="nav-item"> <a class="active nav-link" href="about.html">About</a> </li>
@@ -48,10 +48,13 @@
 		</div>
 	</nav>
 	<!-- About Me -->
-	<section class="container-fluid">
-		<div class="row">
-			<div class="col-12 section-column">
-				<h2 class="section-heading text-center">About Me</h2>
+	<section class="about-me">
+		<div class="row mx-auto">
+			<div class="col-12">
+				<h2 class="top-section-heading text-center">About Me</h2>
+				<div class="flex">
+					<div class="header-line"></div>
+				</div>
 				<div class="row justify-content-center">
 					<div class="col-12 col-md-6">
 						<div class="personal-image"></div>
@@ -73,11 +76,18 @@
 					</div>
 				</div>
 			</div>
-    <!-- My Skills -->
-			<div class="col-12 text-center section-column bg-my-skills">
+		</div>
+	</section>
+	<!-- My Skills -->
+	<section class="about-me bg-my-skills">
+		<div class="row mx-auto">
+			<div class="col-12 text-center">
 				<div class="row progress-section">
 					<div class="col">
 						<h2 class="section-heading">My Skills</h2>
+						<div class="flex">
+							<div class="header-line"></div>
+						</div>
 						<div class="progress">
 							<div class="progress-bar bg-skill" role="progressbar" aria-valuenow="60" aria-valuemin="0"
 								aria-valuemax="100" style="width:60%;">
@@ -137,12 +147,19 @@
 					</div>
 				</div>
 			</div>
-    <!-- Work History -->
-			<div class="col-12 section-column">
+		</div>
+	</section>
+	<!-- Work History -->
+	<section class="about-me">
+		<div class="row mx-auto">
+			<div class="col-12">
 				<div class="row">
 					<div class="col-12">
 						<h2 class="section-heading text-center">My Work History</h2>
 					</div>
+				</div>
+				<div class="flex">
+					<div class="header-line"></div>
 				</div>
 				<div class="timeline">
 					<div class="timeline-content" data-dates="06/2017 - 05/2018">
@@ -161,7 +178,7 @@
 			</div>
 		</div>
 	</section>
-    <!-- Footer -->
+	<!-- Footer -->
 	<footer class="container-fluid">
 		<div id="footer-details" class="row">
 			<div class="col-sm-6">
