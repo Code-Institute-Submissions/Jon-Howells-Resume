@@ -1,0 +1,148 @@
+/* ---------------------------------------------------------- colors */
+
+.bg-skill {
+    background-color: #ff4dd2;
+}
+
+.bg-my-skills {
+    background: #f2f2f2;
+}
+
+/* ---------------------------------------------------------- About Me */
+
+.personal-image {
+    background: url(../images/jon-howells.JPG) no-repeat center;
+    min-height: 250px;
+    max-width: 250px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.about-me-heading {
+    color: #262626;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    margin: 30px 0;
+}
+
+.about-me-text {
+    color: #262626;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.about-me {
+    padding: 100px 0;
+    overflow-x: hidden;
+}
+
+/* ---------------------------------------------------------- My Skills */
+
+.progress {
+    position: relative;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.progress-type, .progress-percentage {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-type {
+    display: flex;
+    left: 0;
+    font-size: 11px;
+    width: 70px;
+    color: #fff;
+    background-color: #b30086;
+}
+
+.progress-percentage {
+    right: 0;
+    font-size: 14px;
+    color: #262626;
+    padding: 0 15px 0 0;
+    display: none;
+}
+
+/* ---------------------------------------------------------- My Work History */
+
+.timeline-content {
+    max-width: 500px;
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #262626;
+    border-left: 1px solid;
+}
+
+.timeline-content p {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+.timeline-content:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-content:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #b30086;
+}
+
+.timeline {
+    margin-bottom: 30px;
+}
+
+.timeline-content h4 {
+    font-family: "Railway", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* ---------------------------------------------------------- Media Queries */
+
+@media only screen and (min-width: 700px){
+    .progress-type {
+        width: 110px;
+        font-size: 14px;
+    }
+    .progress-percentage {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 815px) {
+    .timeline-content {
+        left: 37.5%;
+    }
+}

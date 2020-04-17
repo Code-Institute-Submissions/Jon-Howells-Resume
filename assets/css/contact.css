@@ -1,0 +1,51 @@
+/* ---------------------------------------------------------- Contact */
+
+.my-contact {
+    padding: 100px 0;
+    overflow-x: hidden;
+}
+
+.my-contact .mx-auto {
+    max-width: 500px;
+}
+
+form {
+    padding: 30px 0 0 0;
+}
+
+.my-contact h4 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #b30086;
+}
+
+.form-control {
+    margin-bottom: 5px;
+    color: #fff;
+    background-color: #262626;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.hvr-sweep-to-bottom:before {
+    background: #b30086;
+}
+
+/* ---------------------------------------------------------- Media Queries */
+
+@media only screen and (min-height: 700px) {
+    #contact-footer {
+        position: fixed;
+        bottom: 0;
+    }
+    .my-contact h4 {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 815px) {
+    .my-contact {
+        padding: 100px 0;
+    }
+}

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* ---------------------------------------------------------- colors */
+
+.bg-header-dark {
+    background-color: #262626;
+}
+
+/* ---------------------------------------------------------- Site Wide CSS */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mx-auto {
+    max-width: 1200px;
+}
+
+.header-line {
+    background: #262626;
+    height: 4px;
+    width: 80px;
+    margin: 0 0 50px 0;
+}
+
+.section-heading {
+    color: #262626;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 0 0 20px 0;
+}
+
+.top-section-heading {
+    color: #262626;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 0 0 20px 0;
+}
+
+.flex {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ---------------------------------------------------------- NavBar */
+
+nav {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 20px;
+    border-bottom: 3px solid #b30086;
+    width: 100%;
+}
+.navbar-brand{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.nav-link i {
+    color: #fff;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #b30086;
+}
+
+/* ---------------------------------------------------------- Hover */
+
+li a:hover, li i:hover, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-brand:hover {
+    color: #b30086;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+button a:hover {
+    text-decoration: none;
+    color: #b30086;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+/* ---------------------------------------------------------- Footer */
+
+footer {
+    background-color: #262626;
+    color: #fff;
+    min-height: 60px;
+    border-top: 3px solid #b30086;
+}
+
+#footer-details {
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+h6 {
+    margin: 0;
+}
+
+.cv-download i {
+    color: #fff;
+    padding-left: 4px;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.cv-download i:hover{
+    color: #b30086;
+}
+
+/* ---------------------------------------------------------- Media Queries */
+
+@media only screen and (max-width: 400px) {
+    .navbar-toggler-icon {
+        width: 1.25em;
+        height: 1.25em;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .section-heading, .top-section-heading {
+        font-size: 40px;
+    }
+    .top-section-heading {
+        margin: 60px 0 20px 0;
+    }
+}
+
+@media only screen and (min-width: 815px) {
+    .navbar-brand {
+        font-size: 30px;
+    }
+    .navbar-nav {
+        font-size: 25px;
+    }
+}
+

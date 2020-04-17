@@ -1,0 +1,77 @@
+/* ---------------------------------------------------------- Start Page */
+
+
+.d-flex {
+    align-items: center;
+    text-align: center;
+}
+
+.home-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../images/background-artwork.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.home-text {
+    font-size: 22px;
+    line-height: 24px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+    position: absolute;
+    top: 8%;
+}
+
+.btn-dark {
+    background-color: transparent;
+    border: 2px solid #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.home-button{
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0;
+}
+
+.highlight-text {
+    color: #b30086;
+}
+
+.hvr-sweep-to-right:before {
+    background: #b30086;
+}
+
+.home-button i {
+    color: #fff;
+    font-size: 17px;
+}
+
+/* ---------------------------------------------------------- Hover */
+
+.home-button:hover {
+    border-color: #b30086;
+    background-color: #b30086;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out; 
+}
+
+/* ---------------------------------------------------------- Media Queries */
+
+@media only screen and (min-width: 700px){
+    .home-text {
+        font-size: 44px;
+        line-height: 48px;
+    }
