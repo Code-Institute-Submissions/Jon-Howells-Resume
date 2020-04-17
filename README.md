@@ -250,7 +250,7 @@ I wanted to find some smaller sized images of websites I could use as placeholde
 I realised I didn't need smaller images, just .png's as they are resizable. I stumbled upon this website which was perfect, had loads of good .png 
 images and all real websites. No more thought than that. But they were a godsend.
 
-The images on the carousel are taken from the direct websites using the snip & sketch tool on windows, which makes the images .png.
+The images on the carousel are taken from the direct websites (https://www.facebook.com/ , https://www.indtech-service.co.uk/ , https://www.reddit.com/) using the snip & sketch tool on windows, which makes the images .png.
 
 ### Acknowledgements 
 
