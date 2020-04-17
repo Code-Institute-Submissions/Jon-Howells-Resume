@@ -32,6 +32,13 @@ form {
     background: #b30086;
 }
 
+.btn-card {
+    color: #fff;
+    background-color: #262626;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
 /* ---------------------------------------------------------- Media Queries */
 
 @media only screen and (min-height: 700px) {

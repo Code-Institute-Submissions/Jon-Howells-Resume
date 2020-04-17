@@ -236,10 +236,24 @@ before the last commitment
 6. From there go to Github and select my current project
 7. Locate the settings and scroll down to Github Pages, select the master branch under source and wait for your website to go live
 
+The only difference between my development stage preview of the website and the deployed version it seems it a little bit of spacing change on the about page, between
+the header line and the text and image below it. 
+
+I ran my website locally to test the website using the command python3 -m http.server in the terminal on Gitpod.
 
 ## Credits
 
-Reference: All the images are taken from a website called BlueSnap, from this article: https://home.bluesnap.com/snap-center/blog/ecommerce-website-examples/
+### Media
+
+All the images on the portfolio cards are taken from a website called BlueSnap, from this article: https://home.bluesnap.com/snap-center/blog/ecommerce-website-examples/
 I wanted to find some smaller sized images of websites I could use as placeholders as I don't have any real websites I've worked on. While searching
 I realised I didn't need smaller images, just .png's as they are resizable. I stumbled upon this website which was perfect, had loads of good .png 
 images and all real websites. No more thought than that. But they were a godsend.
+
+The images on the carousel are taken from the direct websites using the snip & sketch tool on windows, which makes the images .png.
+
+### Acknowledgements 
+
+I recieved inspiration from a number of different projects:
+* A lot of websites on squaredspace for the use of white space and simple layouts
+* Previous projects that we completed in the course, the mini-resume-project and the whiskey drop website we built using bootstrap
